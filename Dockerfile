@@ -2,8 +2,8 @@ FROM php:7.0-apache
 MAINTAINER jose nazario <jose@monkey.org>
 LABEL version="1.0" description="lfi-labs Docker image"
 
-RUN apt-get -qq update && \
-  apt-get install whois
+#RUN apt-get -qq update && \
+ # apt-get install whois
 
 COPY . /var/www/html
 
